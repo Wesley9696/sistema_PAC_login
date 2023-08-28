@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    min-width: 360px !important; 
+    background-image: url(img/fundo-login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-login {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.card-login {
+    width: 34%;
+    height: 505px;
+    position: fixed;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+    border-radius: 25px;
+    background: #EDEAEF;
+    box-shadow: 0px 2.309687852859497px 3.623039960861206px 0px rgba(169, 80, 196, 0.03), 0px 6.38599157333374px 10.017241477966309px 0px rgba(169, 80, 196, 0.04), 0px 15.375007629394531px 24.117658615112305px 0px rgba(169, 80, 196, 0.05), 0px 51px 80px 0px rgba(169, 80, 196, 0.08);
+}
+
+.card-login-1 {
+    width: 34%;
+    height: 450px;
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:95px 15px;
+    border-radius: 25px;
+    background: var(--gradiente-clinica, linear-gradient(214deg, #613494 0%, #43008F 100%));
+    box-shadow: 0px 4px 4px 0px rgba(252, 189, 56, 0.01);
+    z-index: 1;
+}
+
+.card-login-1 img {
+    width: 70px;
+}
+
+.card-login-1 h1 {
+    padding: 0;
+    margin-top: 20px;
+    color: #C9C0CC;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 70px;
+    line-height: 14px;
+}
+
+
+.direita-login {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.textfield {
+    width: 50%;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0em 0 8px;
+    margin:40px 0 0 0;
+    border-radius: 25px;
+    background: #FBFBFB;
+    box-shadow: 0px 6.650102138519287px 6.251095771789551px 0px rgba(0, 0, 0, 0.07), 0px 12.521552085876465px 11.770258903503418px 0px rgba(0, 0, 0, 0.09);
+}
+
+.textfield input {
+    width: 100%;
+    height: 43px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 0 0 45px;
+    background: #FBFBFB;
+    outline: none;
+    border-radius: 25px;
+    float: left;
+}
+
+.form-link {
+    width: 50%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: flex-end;
+    color: #A2A1A3;
+    font-size: 14px;
+}
+
+.btn {
+    width: 44%;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 8px;
+}
+
+.btn-login {
+    width: 210px;
+    padding: 6px;
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: var(--gradiente-clinica, linear-gradient(214deg, #613494 0%, #43008F 100%));
+    box-shadow: 0px 6.650102138519287px 6.251095771789551px 0px rgba(0, 0, 0, 0.07), 0px 12.521552085876465px 11.770258903503418px 0px rgba(0, 0, 0, 0.09), 0px 22.3363094329834px 20.996129989624023px 0px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+}
+
+.icon-login {
+    position: absolute;
+    width: 13px;
+    margin-left: 15px;
+}
+
+.logopac-mobile{
+    display: none;
+}
+
+/*Responsividade*/
+@media only screen and (min-width: 1367px) and (max-width: 2000px) {
+    .card-login {
+        width: 36%;
+        height: 796px;
+        left: 33%;
+        padding-right: 75px;
+    }
+    .card-login-1{
+        width: 35%;
+        height: 740px;
+        margin-right: 90px;
+    }
+    .card-login-1 img{
+    width: 115px;
+    height: 140px;
+    }
+    .card-login-1 h1{
+
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .textfield {
+        height: 52px;
+        margin: 60px 0 0 0;
+    }
+    .textfield input::placeholder{
+        font-size: 15px;
+    }
+    .btn-login {
+        width: 150%;
+        padding: 10px;
+        border-radius: 28px;
+        font-size: 25px;
+        color: #ffff;
+        margin-right: 20px;
+        margin-bottom: 70px;
+}
+.form-link{
+    font-size: 16px;
+    margin-bottom: 10px;  
+}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1063px) {
+    .card-login {
+        width: 50%;
+        left: 28%;
+    }
+
+    .card-login-1 {
+        width: 50%;
+    }
+
+    .textfield {
+        height: 40px;
+    }
+
+    .btn-login {
+        padding: 6px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        margin-right: 10px;
+        margin-left: -10px;
+    }
+    .logopac-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+    .card-login {
+        width: 50%;
+        left: 28%;
+    }
+
+    .card-login-1 {
+        width: 50%;
+    }
+
+    .textfield {
+        height: 35px;
+    }
+
+    .btn-login {
+        padding: 6px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        margin-right: 8px;
+        margin-left: -5px;
+    }
+
+    .icon-login {
+        width: 10px;
+        margin-left: 8px;
+    }
+
+    .textfield input {
+        padding: 0 0 0 30px;
+    }
+    .logopac-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 587px) and (max-width: 719px) {
+    .card-login {
+        width: 60%;
+        left: 24%;
+    }
+
+    .card-login-1 {
+        width: 50%;
+    }
+
+    .card-login-1 h1 {
+        font-size: 8px;
+        line-height: 10px;
+
+    }
+
+    .textfield {
+        height: 45px;
+    }
+
+    .btn-login {
+        padding: 15px;
+        margin-left: 1px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .icon-login {
+        width: 10px;
+        margin-left: 8px;
+    }
+
+    .textfield input {
+        padding: 0 0 0 30px;
+    }
+    .logopac-mobile{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 586px) {
+    .card-login {
+        width: 80%;
+        left: 10%;
+    }
+
+    .card-login-1 {
+        display: none;
+    }
+    
+    .card-login-1 h1 {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    .textfield {
+        width: 100%;
+        height: 40px;
+        margin-right: -26px;
+    }
+
+    .form-link {
+        width: 100%;
+        margin-right: -25px;
+        padding: 0 10px 0 10px;
+    }
+
+    .btn {
+        margin-right: -25px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-login {
+        height: 40px;
+        padding: auto;
+        margin-left: 25px;
+    }
+
+    .icon-login {
+        width: 10px;
+        margin-left: 8px;
+    }
+
+    .textfield input {
+        padding: 0 0 0 30px;
+    }
+    .logopac-mobile{
+        flex-direction: column;
+        width: 90%;
+        display: flex;
+        position: relative;
+        right: 44%;
+        bottom: 210px;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border-radius: 25px;
+        background: var(--gradiente-clinica, linear-gradient(214deg, #613494 0%, #43008F 100%));
+        box-shadow: 0px 4px 4px 0px rgba(252, 189, 56, 0.01); 
+        z-index: 1;
+        box-shadow: 0px 6.650102138519287px 6.251095771789551px 0px rgba(0, 0, 0, 0.07), 0px 12.521552085876465px 11.770258903503418px 0px rgba(0, 0, 0, 0.09), 0px 22.3363094329834px 20.996129989624023px 0px rgba(0, 0, 0, 0.10);
+    }
+    .logopac-mobile p{
+        color: #A2A1A3;
+        margin-top: 10px;
+        font-size: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-mobile{
+        width:65px;
+    }
+
+}
